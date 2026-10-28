@@ -1,0 +1,82 @@
+/*comments added so I dont get lost*/
+/* Remove default browser spacing */
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height:100%;
+    margin: 0;
+}
+
+/*page layout*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    height: 78px;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+}
+
+/* Navigation bar */
+nav {
+    height: 39px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Main content and sidebar */
+.content {
+    display: flex;
+    flex: 1;
+    min-height: 208px;
+}
+
+main {
+    width: 72.5%;
+    background-color: #ccc;
+    padding: 12px;
+}
+
+aside {
+    width: 27.5%;
+    background-color: white;
+    padding: 12px;
+}
+
+/* Footer */
+footer {
+    min-height: 128px;
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 500px) {
+    .content {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100%;
+        min-height: 150px;
+    }
+}
