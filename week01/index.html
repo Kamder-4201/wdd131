@@ -35,26 +35,26 @@
     <main>
 
         <h1>Jeff Bernard R. Candelario</h1>
-        <div class="content1">
+        <div class="content">
             <!-- ABOUT ME -->
             <section class="about-me">
                 <h2>About me*</h2>
                 <!-- *=TO BE UPDATED -->
                     <div class="personal-info">
                         <p>
-                            About me sections/personal info
+                            ;odabsdo;absd;oubasd;fiogfdjiogdfjiogfdjiogfdjiogfdjiofgdjiofgdjiofgdiojfgdjiofgdjoidfgjiofgdjiofgdjiofgdjiofgdjiofgdjiodfgijodfgjiofgdjiogfdojidfgjiofdgijofgdjiofgdjiofgdjiofdgijofgdijofgdjio
                         </p>
 
                         <figure>
-                            <img src="iamges/profile.jpg" alt="Portrait of Jeff Bernard Candelario">
+                            <img src="images/jeff1.jpg" alt="Portrait of Jeff Bernard Candelario">
                         </figure>
                     </div>
                 <!-- LOCATION ME-->
                 <section class="location">
                     <h3>location me*</h3>
                     <figure>
-                        <img src="images/ph.jpg" alt="Flaf of the Philippines">
-                        <figcaption>Flag of the Philippines</figcaption>
+                        <img src="images/flag_8.jpg" alt="Official Flag of the Philippines">
+                        <figcaption>Official Flag of the Philippines</figcaption>
                     </figure>
                     <p>
                         * about Philippines
@@ -108,6 +108,16 @@
             Last Modification:
             <span id="lastModifiedDate"></span>
         </p>
+
+        <div id="viewport-size" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; font-family: monospace; font-size: 14px; z-index: 9999; border-radius: 4px;">Width: <span></span>px</div>
+
+            <script>
+            function updateWidth() {
+                document.querySelector('#viewport-size span').textContent = window.innerWidth;
+            }
+            updateWidth();
+            window.addEventListener('resize', updateWidth);
+            </script>
 
     </footer>
 

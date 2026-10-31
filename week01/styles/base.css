@@ -1,0 +1,165 @@
+/* 1. General page styles */
+* {
+    box-sizing: border-box;
+}
+
+/* main Header */
+header {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* main Body */
+body {
+    margin: 0 auto;
+    max-width: auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+/* Main My Name */
+main h1 {
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+/* Main content layout */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 0 40px 15px;
+}
+
+/* Card styles */
+.about-me,
+.web-resources {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Card headings */
+.about-me h2,
+.web-resources h2 {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 12px;
+}
+
+/* Personal information */
+.personal-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+.personal-info p {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.6;
+}
+
+.personal-info figure {
+    flex: 0 0 110px;
+    margin: 0;
+}
+
+.personal-info img {
+    width: 210px;
+    height: auto;
+}
+.location {
+    margin-top: 20px;
+    padding: 15px;
+}
+/* location */
+.location h3 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.location figure {
+    width: 150px;
+    margin: 10px 15px 0 0;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+}
+
+.location figcaption {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+/* list of URL */
+.web-resources ul {
+    padding: 20px 30px;
+    margin: 0;
+}
+/* Spacing of links */
+.web-resources li {
+    margin-bottom: 20px;
+}
+
+.web-resources a {
+    color: #204f70;
+}
+
+.web-resources a:hover {
+    color: #0879b9;
+}
+/* Footer */
+footer {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-info figure {
+        order: -1;
+    }
+}
