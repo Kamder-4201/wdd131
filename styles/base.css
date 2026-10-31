@@ -1,0 +1,217 @@
+/* 1. General page styles */
+* {
+    box-sizing: border-box;
+}
+
+/* main Header */
+header {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+header p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* main Body */
+body {
+    margin: 0 auto;
+    max-width: auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+    /* added to test */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main My Name */
+main h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0 30px;
+}
+
+/* Main content layout */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 0 40px 15px;
+    flex: 1;
+}
+
+/* Card styles */
+.about-me,
+.web-resources {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Card headings */
+.about-me h2,
+.web-resources h2 {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 12px;
+}
+
+/* Personal information */
+.personal-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+.personal-info p {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.6;
+}
+
+.personal-info figure {
+    flex: 0 0 110px;
+    margin: 0;
+}
+
+.personal-info img {
+    width: 210px;
+    height: auto;
+}
+.location {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.location h3 {
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Flexbox wrapper for the flag and paragraph */
+.location-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.location-info figure {
+    flex: 0 0 200px;
+    margin: 0;
+}
+
+.location-info img {
+
+    width: 100%;
+    height: auto;
+}
+
+.location-info figcaption {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.location-info p {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.6;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.location figcaption {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+/* list of URL */
+.web-resources ul {
+    padding: 20px 30px;
+    margin: 0;
+}
+/* Spacing of links */
+.web-resources li {
+    margin-bottom: 20px;
+}
+
+.web-resources a {
+    color: #204f70;
+}
+
+.web-resources a:hover {
+    color: #0879b9;
+}
+/* Footer */
+footer {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 14px;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 650px) {
+    header p {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-info figure {
+        order: -1;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--OCT.29.2026-->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD,131,Dynamic Web Fundamentals Jeff Bernard Candelario</title>
+
+    <meta name="description" content="Developer Introduction">
+    <meta name="author" content="Jeff Bernard Candelario">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <p>WDD 131: Dynamic Web Fundamentals - Jeff Bernard Candelario</p>
+    </header>
+
+    <!-- NAVIGATE-->
+    <nav aria-label="main navigation">
+        <a href="#">linkedIn</a>
+        <a href="#">I-Learn</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <!-- MAIN SECT -->
+    <main>
+
+        <h1>Jeff Bernard R. Candelario</h1>
+        <div class="content">
+            <!-- ABOUT ME -->
+            <section class="about-me">
+                <h2>About me</h2>
+                <!-- *=TO BE UPDATED -->
+                    <div class="personal-info">
+                        <p>
+                            ;odabsdo;absd;oubasd;fiogfdjiogdfjiogfdjiogfdjiogfdjiofgdjiofgdjiofgdiojfgdjiofgdjoidfgjiofgdjiofgdjiofgdjiofgdjiofgdjiodfgijodfgjiofgdjiogfdojidfgjiofdgijofgdjiofgdjiofgdjiofdgijofgdijofgdjio
+                        </p>
+
+                        <figure>
+                            <img src="images/jeff1.jpg" alt="Portrait of Jeff Bernard Candelario">
+                        </figure>
+                    </div>
+                <!-- LOCATION ME-->
+                <section class="location">
+                    <h3> Leyte, Philippines</h3>
+                    <div class="location-info">
+                        <figure>
+                            <img src="images/flag_8.jpg" alt="Flag of the Philippines">
+                            <figcaption>Official Flag of the Philippines</figcaption>
+                        </figure>
+                        <p>
+                        * dfbunoidfoujnidiuodfsuiohdsfiondfsiojdfjiodfsjiofdsjiodfsjiodsfjiodsfjiodsfjiooooooooooooooooooijodsjiosdfjidosfjiodfsjiosdfijosdfjiosdfijodsfjiodsfjiosdfjiosdfiojdsfjiodsfjiosdfiojdsfojidsfiojsdf
+                        </p>
+                    </div>    
+                </section>
+            </section>
+            <!-- WEB DEVELOPMENT RESOURCES -->
+            <aside class="web-resources">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+                    <li>
+                        <a href="#">Dev.to Community</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Smashing Magazine</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CSS Tricks</a>
+                    </li>
+
+                    <li>
+                        <a href="#">W3 Schools</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Udemy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lorem Picsum Image Placeholder</a>
+                    </li>
+                </ul>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy;2026 🌴 Jeff Bernard Candelario 👒 Philippines
+        </p>
+
+        <p id="lastModified">
+            Last Modification:
+            <span id="lastModifiedDate"></span>
+        </p>
+
+        <div id="viewport-size" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; font-family: monospace; font-size: 14px; z-index: 9999; border-radius: 4px;">Width: <span></span>px</div>
+
+            <script>
+            function updateWidth() {
+                document.querySelector('#viewport-size span').textContent = window.innerWidth;
+            }
+            updateWidth();
+            window.addEventListener('resize', updateWidth);
+            </script>
+
+    </footer>
+    <!-- Testing-->
+</body>
+</html>
