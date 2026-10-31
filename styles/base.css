@@ -89,9 +89,10 @@ main h1 {
 }
 /* Web resources list */
 .card ul {
-    padding: 20px 30px;
+    padding: 50px 4rem;
     margin: 0;
     list-style: disc;
+    font-size: 1.2rem;
 }
 
 .card li {
@@ -131,7 +132,7 @@ main h1 {
 }
 
 .personal-info img {
-    width: 150px;
+    width: 200px;
     height: auto;
     padding-right: 10px;
 }
@@ -162,8 +163,8 @@ main h1 {
 
 .location-info img {
 
-    width: 100%;
-    height: auto;
+    width: 18rem;
+    height: 10rem;
 }
 
 .location-info figcaption {
