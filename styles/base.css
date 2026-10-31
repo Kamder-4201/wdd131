@@ -71,7 +71,7 @@ main h1 {
 }
 
 /* Card styles */
-.about-me,
+.card,
 .web-resources {
     border: 1px solid #bbb;
     border-radius: 8px;
@@ -80,7 +80,7 @@ main h1 {
 }
 
 /* Card headings */
-.about-me h2,
+.card h2,
 .web-resources h2 {
     background-color: #204f70;
     color: white;
