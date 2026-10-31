@@ -144,7 +144,7 @@ main h1 {
 .personal-info img {
     width: 200px;
     height: auto;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .location {
     margin-top: 20px;
@@ -174,7 +174,7 @@ main h1 {
 .location-info img {
 
     width: 18rem;
-    height: 10rem;
+    height: 13rem;
 }
 
 .location-info figcaption {
