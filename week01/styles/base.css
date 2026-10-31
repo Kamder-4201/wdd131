@@ -8,7 +8,15 @@ header {
     background-color: #204f70;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+header p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* Navigation */
@@ -108,34 +116,51 @@ main h1 {
     margin-top: 20px;
     padding: 15px;
 }
-/* location */
+
 .location h3 {
+    font-size: 20px;
     text-align: center;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
 
-.location figure {
-    width: 150px;
-    margin: 10px 15px 0 0;
+/* Flexbox wrapper for the flag and paragraph */
+.location-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 10px;
 }
 
-.location img {
+.location-info figure {
+    flex: 0 0 200px;
+    margin: 0;
+}
+
+.location-info img {
+
     width: 100%;
     height: auto;
 }
 
-.location p {
-    flex: 1;
-    min-width: 0;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    line-height: 1.6;
-}
-
-.location figcaption {
+.location-info figcaption {
     text-align: center;
     font-size: 12px;
+    font-style: italic;
+}
+
+.location-info p {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.6;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.location figcaption {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
     font-style: italic;
 }
 /* list of URL */
@@ -171,6 +196,13 @@ footer p {
 #lastModified {
     color: yellow;
     font-size: 14px;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 650px) {
+    header p {
+        white-space: normal;
+    }
 }
 
 @media screen and (max-width: 650px) {
