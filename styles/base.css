@@ -211,6 +211,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 15px;
+    font-size: 1.2rem;
 }
 
 footer p {
@@ -219,7 +220,7 @@ footer p {
 
 #lastModified {
     color: yellow;
-    font-size: 14px;
+    font-size: 1.3rem;
 }
 
 /* Tablet and smaller screens */
