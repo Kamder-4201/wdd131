@@ -37,6 +37,8 @@ nav a {
 
 /* main Body */
 body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400; /*font test*/
     margin: 0 auto;
     max-width: none;
     font-family: Arial, sans-serif;
@@ -46,6 +48,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* font test */
+h1,
+h2,
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
 }
 
 main {
