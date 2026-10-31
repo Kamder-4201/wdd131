@@ -14,20 +14,25 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /* Header */
 header {
-    height: 78px;
-    background-color: #333;
+    background-color: #204f70;
     color: white;
-    padding: 12px;
+    text-align: center;
+    padding: 0;
     font-size: 25px;
+}
+
+/* Course title */
+#course-title {
+    display: block;
+    padding: 10px 0;
 }
 
 /* Navigation bar */
 nav {
-    height: 50px;
-    background-color: black;
+    height: 30px;
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,9 +42,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
 }
-
 /* Main content and sidebar */
 .content {
     display: flex;
