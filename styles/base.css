@@ -223,6 +223,23 @@ footer p {
     font-size: 1.3rem;
 }
 
+#viewport-size {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    padding: 5px 10px;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    z-index: 9999;
+    border-radius: 4px;
+}
+
 /* Tablet and smaller screens */
 @media screen and (max-width: 700px) {
    nav {
