@@ -31,12 +31,23 @@ body {
     font-family: Arial, sans-serif;
     color: #222;
     background-color: white;
+    /* added to test */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Main My Name */
 main h1 {
+    font-size: 50px;
     text-align: center;
-    margin: 25px 0 15px;
+    margin: 30px 0 30px;
 }
 
 /* Main content layout */
@@ -45,6 +56,7 @@ main h1 {
     grid-template-columns: 2fr 1fr;
     gap: 10px;
     margin: 0 40px 15px;
+    flex: 1;
 }
 
 /* Card styles */
@@ -111,6 +123,14 @@ main h1 {
 .location img {
     width: 100%;
     height: auto;
+}
+
+.location p {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
 }
 
 .location figcaption {
