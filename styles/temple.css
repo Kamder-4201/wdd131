@@ -1,0 +1,67 @@
+footer {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+#viewport-size {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    padding: 5px 10px;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    z-index: 9999;
+    border-radius: 4px;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 700px) {
+   nav {
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-info figure {
+        order: -1;
+    }
+
+    .personal-info p {
+        width: 100%;
+    }
+
+    .location-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-info p {
+        width: 100%;
+    }
+}
