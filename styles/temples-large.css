@@ -6,37 +6,19 @@
     }
 }
 
-/* Small screens: 1 column, stacked header */
+/* Small screens: 1 column, tighter nav */
 @media screen and (max-width: 650px) {
     .location-info {
         grid-template-columns: 1fr;
     }
 
-    header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
-
-}
-
-
-/* Footer Do not Touch */
-/* Footer Do not Touch */
-@media screen and (max-width: 700px) {
-   nav {
-        height: auto;
-        gap: 10px;
-        padding: 10px;
+    nav ul {
+        gap: 1rem;
     }
 }
+
+/* Footer Do not Touch */
+/* Footer Do not Touch */
 
 @media screen and (max-width: 700px) {
     .personal-info {
