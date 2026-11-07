@@ -12,8 +12,50 @@
         grid-template-columns: 1fr;
     }
 
-    nav ul {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header.open nav a {
+        display: block;
+        font-size: clamp(1rem, 4vw, 2.5rem);
+        padding: 0.10rem 0;
+    }
+
+    header.open nav ul {
         gap: 1rem;
+    }
+
+    #menu {
+        display: block;
+        margin-left: auto;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+
+    /* when the menu is open */
+    header.open nav {
+        display: block;
+    }
+
+    header.open #course-title {
+        display: none;
     }
 }
 
