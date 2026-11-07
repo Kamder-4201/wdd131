@@ -1,21 +1,30 @@
 /* Medium screens: 2 columns */
 @media screen and (max-width: 900px) {
-  .location-info {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 1rem;
-  }
+    .location-info {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
 }
 
 /* Small screens: 1 column, stacked header */
 @media screen and (max-width: 650px) {
-  .location-info {
-    grid-template-columns: 1fr;
-  }
+    .location-info {
+        grid-template-columns: 1fr;
+    }
 
-  header {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
 }
 
 
