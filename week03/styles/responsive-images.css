@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
