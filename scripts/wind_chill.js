@@ -1,7 +1,7 @@
 // Static values for now (must match the numbers shown in the Weather section).
 // Later, these will come from a weather API.
-const temperature = 8; // °C
-const windSpeed = 15;   // km/h
+const temperature = 28; // °C
+const windSpeed = 8;   // km/h
 
 // Returns the wind chill (°C) for a temperature in °C and wind speed in km/h.
 function calculateWindChill(temp, speed) {
