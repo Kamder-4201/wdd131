@@ -1,32 +1,42 @@
+/* descriptions written with ai to give me notes */
+:root {
+  --green-dark: rgb(21 100 55);   /* header + footer */
+  --green-block: #1a7a4c;         /* heading blocks */
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-heading: "Rubik", sans-serif;
+  --heading-offset: -2rem;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "DM Sans", Arial, sans-serif;   
-  margin: 0%;
+  font-family: var(--font-body);
+  margin: 0;
 }
 
 /* ---------- Header ---------- */
 header {
   text-align: center;
-  padding: 1.5rem 1rem;
-  background-color: rgb(87, 212, 141);
+  color: #fff;
+  padding: 1rem 1rem;
+  background-color: var(--green-dark);
   border-bottom: 15px solid #333;
+  letter-spacing: 4px;
 }
 
 header h1 {
   display: inline-block;
   margin: 0;
   padding: 0.5rem 3rem;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 3rem;
 }
 
 header h1,
 .box h2 {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-heading);
 }
 
 /* ---------- Main: image fills the area, boxes sit on top ---------- */
@@ -46,14 +56,38 @@ main {
 
 .box {
   position: absolute;
-  background: #fff;
-  border: 2px solid #333;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2rem;
   padding: 1rem 1.5rem;
 }
 
-.box h2 {
-  margin: 0 0 0.75rem;
+/* Green heading block (large view) */
+.box h2,
+.weather-heading {
+  background: var(--green-block);          /* green block */
+  color: #fff;
+  width: fit-content;                      /* block hugs its content instead of full width */
+  margin: 0 0 1rem var(--heading-offset);  /* negative left margin = the offset */
+  padding: 0.6rem 1.25rem;                 /* equal left/right */
   font-size: 1.25rem;
+}
+
+/* The h2 inside the weather heading uses the wrapper's green block */
+.weather-heading h2 {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;                               /* space between "Weather" and the icon */
+}
+
+.weather-heading img {
+  width: 32px;
+  height: 32px;
 }
 
 .data {
@@ -61,15 +95,13 @@ main {
   left: 1.5rem;
 }
 
+.data h2 {
+  width: calc(100% + 2rem);
+}
+
 .weather {
   bottom: 1.5rem;
   right: 1.5rem;
-}
-
-.weather-heading {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 /* Label / value pairs side by side */
@@ -90,18 +122,88 @@ dd {
 
 /*--FOOTER--*/
 footer {
-    background-color: #204f70;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 1.2rem;
+  background-color: var(--green-dark);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 
 footer p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 #lastModified {
-    color: yellow;
-    font-size: 1.3rem;
+  color: yellow;
+  font-size: 1.3rem;
+}
+
+/*-- SVG image change--*/
+@media (min-width: 1024px) {
+  .weather-heading img {
+    display: none;
+  }
+
+  .weather-heading::after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: url("../images/partlycloud232.svg") no-repeat center / contain;
+  }
+
+  .data h2,
+  .weather-heading {
+    width: calc(100% + 2rem);
+  }
+
+}
+
+/*--Mobile Layout--*/
+@media (max-width: 1023px) {
+
+  /* Image on top, boxes stacked below it */
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    aspect-ratio: 1 / 1;      /* roughly square, like the wireframe */
+    object-fit: cover;
+}
+
+  /* Boxes leave the image and sit in normal flow */
+  .box {
+    position: static;
+    margin: 0 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+  /* Headings: no green block, dark text, centered */
+  .box h2,
+  .weather-heading {
+    background: none;
+    color: #000;                 /* white text would be invisible on the white box */
+    width: auto;
+    margin: 0 auto 1rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Weather: icon goes under the title, both centered */
+  .weather-heading {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Centre the label/value pairs */
+  dl {
+    justify-content: center;
+  }
 }

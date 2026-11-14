@@ -25,12 +25,29 @@
 
     <main>
         <!-- Large background image -->
-        <img class="hero" src="images/hero-place2.webp" alt="Mountain shot Cagayan">
+        <picture>
+            <!-- Large desktop: used when the screen is 1024px wide or more -->
+            <source
+                media="(min-width: 1024px)"
+                srcset="images/hero-place2.webp,
+                sizes="100vw">
+
+            <!-- Fallback / mobile: used for everything else -->
+            <img class="hero"
+                src="images/hero-place1.webp"
+                srcset="images/hero-place1.webp 1067w"
+                sizes="100vw"
+                alt="Mountain Shot in Cagayan">
+        </picture>
 
         <!-- Data box (left) -->
         <section class="box data">
-        <h2>Data</h2>
+        <div class="data-heading">
+            <h2>Data</h2>
+        </div>
             <dl>
+                <dt>Label:</dt><dd>Value</dd>
+                <dt>Label:</dt><dd>Value</dd>
                 <dt>Label:</dt><dd>Value</dd>
                 <dt>Label:</dt><dd>Value</dd>
                 <dt>Label:</dt><dd>Value</dd>
@@ -44,7 +61,10 @@
         <section class="box weather">
         <div class="weather-heading">
             <h2>Weather</h2>
-            <img src="images/weather.png" alt="Weather icon" width="32" height="32">
+            <picture>
+                <!-- Small screens / fallback -->
+                <img src="images/cloudysunny231.svg" alt="Partly cloudy" width="32" height="32">
+            </picture>
         </div>
             <dl>
                 <dt>Label:</dt><dd>Value</dd>
