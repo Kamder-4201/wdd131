@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", Arial, sans-serif;   
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid #333;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5rem 3rem;
+  border: 2px solid #333;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+header h1,
+.box h2 {
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+/* ---------- Main: image fills the area, boxes sit on top ---------- */
+main {
+  position: relative;
+  flex: 1;
+  min-height: 400px;
+  background: #ddd; /* shows if the image is missing */
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.box {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #333;
+  padding: 1rem 1.5rem;
+}
+
+.box h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.data {
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.weather {
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.weather-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Label / value pairs side by side */
+dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem 1rem;
+  margin: 0;
+}
+
+dt {
+  font-weight: normal;
+}
+
+dd {
+  margin: 0;
+}
+
+/*--FOOTER--*/
+footer {
+    background-color: #204f70;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 1.3rem;
+}
