@@ -18,7 +18,7 @@
 }
 
 /*--Mobile Layout--*/
-@media (max-width: 650px) {
+@media (max-width: 899px) {
 
   /* Image on top, boxes stacked below it */
   main {
