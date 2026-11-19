@@ -48,12 +48,52 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
   },
   {
-    templeName: "Mexico City Mexico",
+  templeName: "Mexico City Mexico",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  {
+  templeName: "Cebu City Philippines",
+    location: "Cebu City, Philippines",
+    dedicated: "2010, June, 13",
+    area: 29556,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/133-Cebu-City-Philippines-Temple.jpg"
+  },
+  {
+  templeName: "Manila Philippines",
+    location: "Quezon City, Philippines",
+    dedicated: "1984, September, 25-27",
+    area: 26683,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+  },
+  {
+  templeName: "Bacolod Philippines",
+    location: "Bacolod City, Philippines",
+    dedicated: "2026, May, 31",
+    area: 27895,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/bacolod-philippines-temple/bacolod-philippines-temple-76238-main.jpg"
+  },
+  {
+  templeName: "Davao Philippines",
+    location: "Davao City, Philippines",
+    dedicated: "2026, May, 3",
+    area: 18450,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-69513-main.jpg"
+  },
+  {
+  templeName: "Urdaneta Philippines",
+    location: "Urdaneta City, Philippines",
+    dedicated: "2024, April, 28",
+    area: 32604,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-69513-main.jpg"
   },
   // Add more temple objects here...
 ];
@@ -61,25 +101,17 @@ const temples = [
 const gallery = document.querySelector("#temple-gallery");
 
 function createTempleCard(temple) {
-  const card = document.createElement("figure");
+  const card = document.createElement("section");
+  card.classList.add("temple-card");
 
-  const img = document.createElement("img");
-  img.src = temple.imageUrl;
-  img.alt = `${temple.templeName} Temple`;
-  img.loading = "lazy"; // only loads images as they scroll into view
-  img.width = 400;
-  img.height = 250;
-
-  const caption = document.createElement("figcaption");
-  caption.innerHTML = `
-    <strong>${temple.templeName}</strong><br>
-    Location: ${temple.location}<br>
-    Dedicated: ${temple.dedicated}<br>
-    Size: ${temple.area.toLocaleString()} sq ft
+  card.innerHTML = `
+    <h2>${temple.templeName}</h2>
+    <p><span class="label">Location:</span> ${temple.location}</p>
+    <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
+    <p><span class="label">Size:</span> ${temple.area} sq ft</p>
+    <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
   `;
 
-  card.appendChild(img);
-  card.appendChild(caption);
   return card;
 }
 
