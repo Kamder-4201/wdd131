@@ -1,3 +1,5 @@
+// Code descriptions added with AI //
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -123,3 +125,28 @@ function displayTemples(templeList) {
 }
 
 displayTemples(temples);
+
+// Get the year from strings like "
+function getYear(temple) {
+  return parseInt(temple.dedicated);
+}
+
+const filters = {
+  home:  () => temples,
+  old:   () => temples.filter((t) => getYear(t) < 1900),
+  new:   () => temples.filter((t) => getYear(t) > 2000),
+  large: () => temples.filter((t) => t.area > 90000),
+  small: () => temples.filter((t) => t.area < 10000),
+};
+
+const navLinks = document.querySelectorAll("nav a");
+const pageTitle = document.querySelector("h1");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();                 // stop the "#" jump
+    const type = link.dataset.filter;       // "old", "new", ...
+    displayTemples(filters[type]());        // run that filter, then draw
+    pageTitle.textContent = link.textContent;  // Home, Old, New, ...
+  });
+});
