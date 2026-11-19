@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WDD 131 - Temple Album webpage</title>
+    <meta name="description" content="Temple webpage attempt made by Jeff Candelario in progress for submission">
+    <meta name="author" content="Jeff Bernard Candelario">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" >
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/viewport.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">Temple Album</span>
+        <!--<p>WDD 131: Dynamic Web Fundamentals - Jeff Bernard Candelario</p>-->
+        <button id="menu" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav aria-label="main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Home
+        </h1>
+
+        <div class="location-info" id="temple-gallery"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🌴 Jeff Bernard Candelario 👒 Philippines</p>
+
+        <p>Last Modified: <span id="lastModified"></span></p>
+            
+        <div id="viewport-size">
+            Width: <span></span>px
+        </div>
+    </footer>
+</body>
+
+</html>
