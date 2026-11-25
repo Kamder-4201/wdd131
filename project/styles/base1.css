@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #552f00;
+  --color-bg: #fbf3e6;
+  --color-accent: #00552a;
+  --color-text: #2b1a0c;
+  --color-surface: #e8d5b5;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+#lastModified {
+  color: yellow;
+  font-size: 1.3rem;
+}
+
+#viewport-size {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+
+  padding: 5px 10px;
+
+  font-family: monospace;
+  font-size: 14px;
+
+  z-index: 9999;
+  border-radius: 4px;
+}
