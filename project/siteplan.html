@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- /* 80% HUMAN WORK 20% AI ASSISTED */ -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSITE PLANNING DOCUMENT</title>
@@ -26,7 +27,197 @@
   </head>
 
   <body>
-    <!--commentary-->
+    <header>
+      <div class="header-inner">
+        <div class="logo" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="28" height="22" rx="4" fill="#552F00" />
+            <ellipse cx="14" cy="18" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(-25 14 18)" />
+            <ellipse cx="24" cy="16" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(20 24 16)" />
+            <ellipse cx="19" cy="25" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(-10 19 25)" />
+            <ellipse cx="28" cy="25" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(30 28 25)" />
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">Website planning document</p>
+          <h1>The Brownie Oat Fusion</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Site Name -->
+      <section id="site-name">
+        <h2>Site Name</h2>
+        <p>
+          <strong>The Brownie Oat Fusion</strong> &mdash; the name of the baking blog, so visitors know right away that
+          it is about combining two favorite treats into one. The logo above will appear in the header of every page.
+        </p>
+        <p>Possible domain: <code>brownieoatfusion.com</code></p>
+      </section>
+
+      <!-- Site Purpose -->
+      <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>
+          This site is an informational baking blog documenting the process and experiments behind combining oats and
+          brownies into one dessert. It provides step-by-step baking procedures, ingredient ratios, texture comparisons,
+          and practical tips for making rich, fudgy oat brownies at home.
+        </p>
+      </section>
+
+      <!-- Scenarios -->
+      <section id="scenarios">
+        <h2>Scenarios</h2>
+        <ul>
+          <li>Should I use rolled oats, quick oats, or oat flour to keep the brownies fudgy?</li>
+          <li>At what stage of mixing should I fold in the oats so they bake evenly without sinking?</li>
+          <li>How do I adjust the wet ingredients and baking time so the center doesn't overbake?</li>
+        </ul>
+      </section>
+
+      <!-- Color Schema -->
+      <section id="color-schema">
+        <h2>Color Schema</h2>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #552f00"></div>
+            <div class="swatch-info">
+              <span class="swatch-hex">#552F00</span>
+              <span class="swatch-role">Header, footer, headings</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #fbf3e6"></div>
+            <div class="swatch-info">
+              <span class="swatch-hex">#FBF3E6</span>
+              <span class="swatch-role">Page background</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #00552a"></div>
+            <div class="swatch-info">
+              <span class="swatch-hex">#00552A</span>
+              <span class="swatch-role">Accents, buttons, links</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #2b1a0c"></div>
+            <div class="swatch-info">
+              <span class="swatch-hex">#2B1A0C</span>
+              <span class="swatch-role">Paragraph text</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background-color: #e8d5b5"></div>
+            <div class="swatch-info">
+              <span class="swatch-hex">#E8D5B5</span>
+              <span class="swatch-role">Cards, borders, code chips</span>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 0.75rem">All text and background pairings meet WCAG AAA contrast (7:1 or higher).</p>
+      </section>
+
+      <!-- Typography -->
+      <section id="typography">
+        <h2>Typography</h2>
+
+        <div class="type-card">
+          <p class="type-label">Headings &middot; Poppins</p>
+          <p class="type-sample-heading">Rich, fudgy oat brownies</p>
+          <p>Weights used: 500 and 600. Color: #552F00.</p>
+        </div>
+
+        <div class="type-card">
+          <p class="type-label">Body text &middot; DM Sans</p>
+          <p class="type-sample-body">
+            Fold the oats into the batter last so they stay evenly spread and don't sink to the bottom of the pan.
+            Weights used: 400 and 700. Color: #2B1A0C.
+          </p>
+        </div>
+
+        <div class="type-card">
+          <p class="type-label">Code and measurements &middot; Source Code Pro</p>
+          <p class="type-sample-code">175&deg;C &middot; 25&ndash;30 min &middot; 1 cup oats</p>
+        </div>
+
+        <h3>CSS variables</h3>
+        <p>
+          <code>--font-heading</code>, <code>--font-body</code>, and <code>--font-code</code> are defined in
+          <code>:root</code> so every page uses the same fonts.
+        </p>
+      </section>
+
+      <!-- Wireframe -->
+      <section id="wireframe">
+        <h2>Wireframe</h2>
+        <p>Home page layout for desktop (left) and mobile (right).</p>
+
+        <div class="wireframes">
+          <!-- Desktop -->
+          <div>
+            <p class="wf-caption">Desktop</p>
+            <div class="wf">
+              <div class="wf-box dark">
+                <div class="wf-nav">
+                  <span>Logo + Site name</span>
+                  <span>Home &middot; Recipe &middot; Experiments &middot; Tips &middot; About</span>
+                </div>
+              </div>
+
+              <div class="wf-box wf-hero">
+                Hero image: finished oat brownies
+                <br />
+                Headline + short intro
+                <br />
+                <span class="wf-box accent">Button: See the recipe</span>
+              </div>
+
+              <div class="wf-row">
+                <div class="wf-box">Card: Texture tips</div>
+                <div class="wf-box">Card: Oat types</div>
+                <div class="wf-box">Card: Troubleshooting</div>
+              </div>
+
+              <div class="wf-steps">
+                <div class="wf-box">Ingredient list</div>
+                <div class="wf-box">Step-by-step method (numbered)</div>
+              </div>
+
+              <div class="wf-box dark">Footer: links, contact, copyright</div>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div>
+            <p class="wf-caption">Mobile</p>
+            <div class="wf mobile">
+              <div class="wf-box dark">Logo + menu button</div>
+              <div class="wf-box wf-hero">
+                Hero image
+                <br />
+                Headline
+                <br />
+                <span class="wf-box accent">See the recipe</span>
+              </div>
+              <div class="wf-row">
+                <div class="wf-box">Card: Texture tips</div>
+                <div class="wf-box">Card: Oat types</div>
+                <div class="wf-box">Card: Troubleshooting</div>
+              </div>
+              <div class="wf-steps">
+                <div class="wf-box">Ingredient list</div>
+                <div class="wf-box">Method steps</div>
+              </div>
+              <div class="wf-box dark">Footer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- break in body -->
 
     <footer>
       <p>&copy; <span id="currentyear"></span>🌴 Jeff Bernard Candelario 👒 Philippines</p>
