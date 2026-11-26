@@ -114,6 +114,37 @@ code {
 }
 
 /* ---------- Color swatches ---------- */
+
+/* Color swatches */
+.swatch-cocoa {
+  background-color: var(--color-primary);
+}
+.swatch-cream {
+  background-color: var(--color-bg);
+}
+.swatch-green {
+  background-color: var(--color-accent);
+}
+.swatch-espresso {
+  background-color: var(--color-text);
+}
+.swatch-oat {
+  background-color: var(--color-surface);
+}
+
+/* Note under the color swatches */
+.contrast-note {
+  margin-top: 0.75rem;
+}
+
+/* Logo SVG colors */
+.logo-brownie {
+  fill: var(--color-primary);
+}
+.logo-oat {
+  fill: var(--color-surface);
+}
+
 .swatches {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

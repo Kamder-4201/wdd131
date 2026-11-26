@@ -21,7 +21,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/base1.css" />
+    <link rel="stylesheet" href="styles/base2.css" />
     <!-- SCRIPTS -->
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/viewport.js" defer></script>
@@ -32,11 +32,11 @@
       <div class="header-inner">
         <div class="logo" aria-hidden="true">
           <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="10" width="28" height="22" rx="4" fill="#552F00" />
-            <ellipse cx="14" cy="18" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(-25 14 18)" />
-            <ellipse cx="24" cy="16" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(20 24 16)" />
-            <ellipse cx="19" cy="25" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(-10 19 25)" />
-            <ellipse cx="28" cy="25" rx="3.5" ry="2" fill="#E8D5B5" transform="rotate(30 28 25)" />
+            <rect class="logo-brownie" x="6" y="10" width="28" height="22" rx="4" />
+            <ellipse class="logo-oat" cx="14" cy="18" rx="3.5" ry="2" transform="rotate(-25 14 18)" />
+            <ellipse class="logo-oat" cx="24" cy="16" rx="3.5" ry="2" transform="rotate(20 24 16)" />
+            <ellipse class="logo-oat" cx="19" cy="25" rx="3.5" ry="2" transform="rotate(-10 19 25)" />
+            <ellipse class="logo-oat" cx="28" cy="25" rx="3.5" ry="2" transform="rotate(30 28 25)" />
           </svg>
         </div>
         <div>
@@ -82,42 +82,42 @@
         <h2>Color Schema</h2>
         <div class="swatches">
           <div class="swatch">
-            <div class="swatch-color" style="background-color: #552f00"></div>
+            <div class="swatch-color swatch-cocoa"></div>
             <div class="swatch-info">
               <span class="swatch-hex">#552F00</span>
               <span class="swatch-role">Header, footer, headings</span>
             </div>
           </div>
           <div class="swatch">
-            <div class="swatch-color" style="background-color: #fbf3e6"></div>
+            <div class="swatch-color swatch-cream"></div>
             <div class="swatch-info">
               <span class="swatch-hex">#FBF3E6</span>
               <span class="swatch-role">Page background</span>
             </div>
           </div>
           <div class="swatch">
-            <div class="swatch-color" style="background-color: #00552a"></div>
+            <div class="swatch-color swatch-green"></div>
             <div class="swatch-info">
               <span class="swatch-hex">#00552A</span>
               <span class="swatch-role">Accents, buttons, links</span>
             </div>
           </div>
           <div class="swatch">
-            <div class="swatch-color" style="background-color: #2b1a0c"></div>
+            <div class="swatch-color swatch-espresso"></div>
             <div class="swatch-info">
               <span class="swatch-hex">#2B1A0C</span>
               <span class="swatch-role">Paragraph text</span>
             </div>
           </div>
           <div class="swatch">
-            <div class="swatch-color" style="background-color: #e8d5b5"></div>
+            <div class="swatch-color swatch-oat"></div>
             <div class="swatch-info">
               <span class="swatch-hex">#E8D5B5</span>
               <span class="swatch-role">Cards, borders, code chips</span>
             </div>
           </div>
         </div>
-        <p style="margin-top: 0.75rem">All text and background pairings meet WCAG AAA contrast (7:1 or higher).</p>
+        <p class="contrast-note">All text and background pairings meet WCAG AAA contrast (7:1 or higher).</p>
       </section>
 
       <!-- Typography -->
@@ -153,7 +153,7 @@
       <!-- Wireframe -->
       <section id="wireframe">
         <h2>Wireframe</h2>
-        <p>Home page layout for desktop (left) and mobile (right).</p>
+        <p>Simplified home page layout for desktop (left) and mobile (right).</p>
 
         <div class="wireframes">
           <!-- Desktop -->
@@ -163,30 +163,24 @@
               <div class="wf-box dark">
                 <div class="wf-nav">
                   <span>Logo + Site name</span>
-                  <span>Home &middot; Recipe &middot; Experiments &middot; Tips &middot; About</span>
+                  <span>Home &middot; Recipe &middot; Tips</span>
                 </div>
               </div>
 
               <div class="wf-box wf-hero">
-                Hero image: finished oat brownies
-                <br />
-                Headline + short intro
+                Hero: headline + short intro
                 <br />
                 <span class="wf-box accent">Button: See the recipe</span>
               </div>
 
-              <div class="wf-row">
-                <div class="wf-box">Card: Texture tips</div>
-                <div class="wf-box">Card: Oat types</div>
-                <div class="wf-box">Card: Troubleshooting</div>
-              </div>
-
               <div class="wf-steps">
-                <div class="wf-box">Ingredient list</div>
-                <div class="wf-box">Step-by-step method (numbered)</div>
+                <div class="wf-box">Ingredients</div>
+                <div class="wf-box">Method (numbered steps)</div>
               </div>
 
-              <div class="wf-box dark">Footer: links, contact, copyright</div>
+              <div class="wf-box">Tips: oat type, when to fold in, baking time</div>
+
+              <div class="wf-box dark">Footer: &copy; year, last modified, width</div>
             </div>
           </div>
 
@@ -196,21 +190,15 @@
             <div class="wf mobile">
               <div class="wf-box dark">Logo + menu button</div>
               <div class="wf-box wf-hero">
-                Hero image
-                <br />
-                Headline
+                Hero + headline
                 <br />
                 <span class="wf-box accent">See the recipe</span>
               </div>
-              <div class="wf-row">
-                <div class="wf-box">Card: Texture tips</div>
-                <div class="wf-box">Card: Oat types</div>
-                <div class="wf-box">Card: Troubleshooting</div>
-              </div>
               <div class="wf-steps">
-                <div class="wf-box">Ingredient list</div>
+                <div class="wf-box">Ingredients</div>
                 <div class="wf-box">Method steps</div>
               </div>
+              <div class="wf-box">Tips</div>
               <div class="wf-box dark">Footer</div>
             </div>
           </div>
