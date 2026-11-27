@@ -163,6 +163,18 @@ main {
     color: #555;
 }
 
+.wf1 input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 0;
+    min-height: 2.75rem; /* appearance:none collapses empty date inputs */
+}
+
+/* iOS centers the date text by default */
+.wf1 input[type="date"]::-webkit-date-and-time-value {
+    text-align: left;
+}
+
 .wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
