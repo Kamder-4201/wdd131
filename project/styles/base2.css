@@ -241,7 +241,7 @@ code {
 .wf-box.accent {
   background-color: var(--color-accent);
   color: var(--color-bg);
-  border-color: var(--color-accent);
+  border-color: var(--color-text);
   display: inline-block;
   margin-top: 0.4rem;
 }
